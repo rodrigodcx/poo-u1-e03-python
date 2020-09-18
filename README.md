@@ -1,4 +1,4 @@
-# Unidade 1 - Exercício 02 - Python
+# Unidade 1 - Exercício 03 - Python
 Esse exercício foi escrito em Python e testado com pytest.
 
 Atualmente o teste está falhando pois a saída do método está diferente do esperado.
