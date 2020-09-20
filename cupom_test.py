@@ -23,19 +23,19 @@ CNPJ: 42.591.651/0797-34
 IE: 244.898.500.113
 '''
 
-def test_nome_vazio:
+def test_nome_vazio():
     global nome_loja
     nome_loja = ""
     assert cupom.imprime_dados_loja() == '''O campo nome da loja é obrigatório'''
     nome_loja = "Arcos Dourados Com. de Alimentos LTDA"
 
-def test_logradouro_vazio:
+def test_logradouro_vazio():
     global logradouro
     logradouro = ""
     assert cupom.imprime_dados_loja() == '''O campo logradouro do endereço é obrigatório'''
     logradouro = "Av. Projetada Leste"
 
-def test_numero_zero:
+def test_numero_zero():
     global numero
     numero = 0
     assert cupom.imprime_dados_loja() == '''Arcos Dourados Com. de Alimentos LTDA
@@ -48,25 +48,25 @@ IE: 244.898.500.113
 '''
     numero = 500
 
-def test_municipio_vazio:
+def test_municipio_vazio():
     global municipio
     municipio = ""
     assert cupom.imprime_dados_loja() == '''O campo município do endereço é obrigatório'''
     municipio = "Campinas"
 
-def test_estado_vazio:
+def test_estado_vazio():
     global estado
     estado = ""
     assert cupom.imprime_dados_loja() == '''O campo estado do endereço é obrigatório'''
     estado = "SP"
 
-def test_cnpj_vazio:
+def test_cnpj_vazio():
     global cnpj
     cnpj = ""
     assert cupom.imprime_dados_loja() == '''O campo CNPJ da loja é obrigatório'''
     cnpj = "42.591.651/0797-34"
 
-def test_inscricao_estadual_vazia:
+def test_inscricao_estadual_vazia():
     global inscricao_estadual
     inscricao_estadual = ""
     assert cupom.imprime_dados_loja() == '''O campo inscrição estadual da loja é obrigatório'''
