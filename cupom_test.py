@@ -66,7 +66,7 @@ def test_cnpj_vazio:
     assert cupom.imprime_dados_loja() == '''O campo CNPJ da loja é obrigatório'''
     cnpj = "42.591.651/0797-34"
 
-def test_cnpj_vazio:
+def test_inscricao_estadual_vazia:
     global inscricao_estadual
     inscricao_estadual = ""
     assert cupom.imprime_dados_loja() == '''O campo inscrição estadual da loja é obrigatório'''
